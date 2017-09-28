@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#ccc"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/add_device_ic"
+        layout="@layout/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_below="@+id/add_device_ic"
+        >
+
+        <EditText
+            android:id="@+id/device_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pop_first_selector"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:hint="布控名称"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/pop_last_selector"
+            android:layout_height="45dp">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/device_id_et"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="left|center_vertical"
+                android:hint="设备标识号"
+               android:background="@null"
+                android:paddingLeft="4dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/scan_iv"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/scan_selector"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/device_account_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/pop_first_selector"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:hint="设备账号"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/device_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/pop_last_selector"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:hint="设备密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/save_device_info_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pop_single_selector"
+            android:gravity="center"
+            android:text="保 存"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
